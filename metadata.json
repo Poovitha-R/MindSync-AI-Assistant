@@ -1,0 +1,5 @@
+{
+  "name": "Mindsync AI Assistant",
+  "description": "An intelligent productivity agent that monitors mood, fatigue, and distraction to suggest optimal task scheduling.",
+  "requestFramePermissions": ["camera"]
+}

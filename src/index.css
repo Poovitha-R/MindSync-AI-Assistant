@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Cormorant Garamond", serif;
+}
+
+@layer base {
+  body {
+    @apply bg-[#F9F8F6] text-stone-900 antialiased;
+  }
+}
+
+@layer utilities {
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
+
+.mood-btn-v2.active {
+  @apply bg-stone-900 text-white border-stone-900;
+}
+
+/* Custom focus states for professional look */
+input:focus, select:focus {
+  @apply ring-4 ring-stone-900/5 border-stone-900;
+}
+
+/* Smooth transitions for all interactive elements */
+button, input, select, .role-card {
+  @apply transition-all duration-300 ease-out;
+}
